@@ -18,7 +18,7 @@ def convert_size(size_bytes):
 adapter = speedtest.Speedtest()
 
 while True:
-    download_figure = wifi.download()
+    download_figure = adapter.download()
     decorated_figure = convert_size(download_figure)
     print("Download Speed is ", decorated_figure)
     with open("results.txt", "a") as results_file:
