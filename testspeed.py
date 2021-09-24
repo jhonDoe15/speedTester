@@ -8,7 +8,7 @@ SLEEP_TIMEOUT = 600 # 10 minutes in seconds, (60 seconds per minute) * 10
 def convert_size(size_bytes):
    if size_bytes == 0:
        return "0B"
-   size_name = ("B", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB")
+   size_name = ("b", "Kb", "Mb", "Gb", "Tb", "Pb", "Eb", "Zb", "Yb")
    i = int(math.floor(math.log(size_bytes, 1024)))
    p = math.pow(1024, i)
    s = round(size_bytes / p, 2)
